@@ -93,7 +93,7 @@ const Footer = () => {
                     <MdLocationOn className="mt-1 text-2xl text-primary " />
                   </div>
                   <p className="ml-1 text-sm  font-semibold text-body-color dark:text-body-color-dark">
-                    Office No.54,55, 3rd Floor, 'C' Wing, Shrinath Plaza, FC
+                    Office No.54,55, 3rd Floor, &apos;C&apos; Wing, Shrinath Plaza, FC
                     Road, Pune, Maharashtra.
                   </p>
                 </div>
