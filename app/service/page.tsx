@@ -5,8 +5,8 @@ import { Metadata } from "next";
 import ServiceSectionOne from '@/components/Service/ServiceSectionOne';
 
 export const metadata: Metadata = {
-  title: "About Us",
-  description: "This is About Page",
+  title: "Service",
+  description: "This is Service page",
 };
 
 const ServicePage= () => {

@@ -5,7 +5,7 @@ import Breadcrumb from "@/components/Common/Breadcrumb";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Blog Us",
+  title: "Blog",
   description: "This is Blog Page",
   // other metadata
 };

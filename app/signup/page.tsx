@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Sign Up Page",
+  title: "Sign Up",
   description: "This is Sign Up Page",
   // other metadata
 };

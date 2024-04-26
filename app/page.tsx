@@ -12,8 +12,8 @@ import Video from "@/components/Video";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Page route",
-  description: "This is page route",
+  title: "B",
+  description: "Bicard",
   // other metadata
 };
 

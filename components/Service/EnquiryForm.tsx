@@ -2,6 +2,7 @@ import React from "react";
 import courseData from "./courseData";
 
 const EnquiryForm = () => {
+ 
   return (
     <div className="">
       <div className="bg-primary">

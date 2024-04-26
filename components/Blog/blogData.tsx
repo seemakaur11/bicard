@@ -31,7 +31,8 @@ const blogData: Blog[] = [
   },
   {
     id: 3,
-    title: "STM32 Microcontroller Application Development with C-Bicard Classes.",
+    title:
+      "STM32 Microcontroller Application Development with C-Bicard Classes.",
     paragraph:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet dictum neque, laoreet dolor.",
     image: "/images/blog/blog-03.jpg",

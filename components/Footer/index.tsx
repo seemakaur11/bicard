@@ -22,7 +22,7 @@ const Footer = () => {
       >
         <div className="container">
           <div className="-mx-4 flex flex-wrap">
-            <div className="grid gap-5 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+            <div className="grid gap-5 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 px-5">
               <div className="text-white">
                 <Link href="/" className="mb-5 inline-block">
                   <Image
@@ -53,7 +53,7 @@ const Footer = () => {
                 <h1 className="mb-4 text-xl font-bold text-primary">COURSES</h1>
                 <div className="mb-2.5 flex">
                   <div>
-                    <FaChevronRight className="mt-1 text-xl text-primary " />
+                    <FaChevronRight className="mt-1 text-sm text-primary " />
                   </div>
                   <p className="ml-1 text-sm text-body-color dark:text-body-color-dark">
                     P.G Diploma in Embedded Systems Design
