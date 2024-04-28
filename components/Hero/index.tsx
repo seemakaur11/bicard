@@ -1,78 +1,10 @@
 "use client";
 import Link from "next/link";
-import Image from "next/image";
-import { Swiper, SwiperSlide } from "swiper/react";
-import home1 from "../../public/images/hero/home2.png"
-
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/effect-fade";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import { EffectFade, Navigation, Pagination } from "swiper/modules";
 
 const Hero = () => {
-  const slides = [
-    {
-      id: 1,
-      img: "url('/images/hero/home1.png')",
-      head: "Dhrisha Logistics",
-      text: "We don't just carry your load,we carry your faith",
-    },
-    {
-      id: 2,
-      img: "url('/images/hero/home2.png')",
-      head: "Custom transport solutions",
-      text: "To suit your specific business needs",
-    },
-    {
-      id: 3,
-      img: "url('/images/hero/home3.png')",
-      head: "ROBUST MOBILE APP",
-      text: "Own Delivery Management & Package Tracker App",
-    }
-   
-  ];
-
+  
   return (
     <>
-     {/* <Swiper
-      spaceBetween={50}
-      lazy={true}
-      style={{
-        "--swiper-navigation-color" : "#0000FF",
-        "--swiper-navigation-size": "30px",
-        "--swiper-pagination-color": "#fff",
-      }}
-      navigation={true}
-      pagination={{
-        clickable: true,
-      }}
-      className="mySwiper h-[90%] md:h-[90%] lg:h-[85%]"
-      loop={true}
-      autoplay={{ delay: 2000 }}
-      modules={[EffectFade, Navigation, Pagination]}
-    >
-      {slides.map((slide, index) => {
-            return (
-              <SwiperSlide key={index}>
-                <div
-                  className={`w-full h-[580px] mt-24 bg-cover bg-center bg-no-repeat flex items-center justify-center`}
-                  style={{ backgroundImage: slide.img }}
-                >
-                  <div className="text-white text-center">
-                    <h1 className="text-base sm:text-6xl xxs:text-2xl lg:text-7xl font-bold text-white">
-                      {slide.head}
-                    </h1>
-                    <p className="text-base sm:text-2xl xxs:text-1xl lg:text-3xl text-amber-500 font-semibold mt-3">
-                      {slide.text}
-                    </p>
-                  </div>
-                </div>
-              </SwiperSlide>
-            );
-          })}
-    </Swiper> */}
       <section
         id="home"
         className="dark:bg-gray-dark relative z-10 overflow-hidden bg-white pb-16 pt-[120px] md:pb-[120px] md:pt-[150px] xl:pb-[160px] xl:pt-[180px] 2xl:pb-[200px] 2xl:pt-[210px]"

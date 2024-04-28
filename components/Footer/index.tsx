@@ -26,14 +26,14 @@ const Footer = () => {
               <div className="text-white">
                 <Link href="/" className="mb-5 inline-block">
                   <Image
-                    src="/images/logo/bicard-logo2.png"
+                    src="/images/logo/bicard-logo4.png"
                     alt="logo"
                     className="w-full dark:hidden"
                     width={140}
                     height={30}
                   />
                   <Image
-                    src="/images/logo/bicard-logo2.png"
+                    src="/images/logo/bicard-logo4.png"
                     alt="logo"
                     className="hidden w-full dark:block"
                     width={140}
@@ -50,38 +50,33 @@ const Footer = () => {
                 </p>
               </div>
               <div>
-                <h1 className="mb-4 text-xl font-bold text-primary">COURSES</h1>
+                <h1 className="mb-4 text-xl font-bold text-primary">Our Directory</h1>
                 <div className="mb-2.5 flex">
                   <div>
                     <FaChevronRight className="mt-1 text-sm text-primary " />
                   </div>
-                  <p className="ml-1 text-sm text-body-color dark:text-body-color-dark">
-                    P.G Diploma in Embedded Systems Design
-                  </p>
+                  <Link href="/blog" className="ml-1 text-[12px] font-medium uppercase text-body-color dark:text-body-color-dark">
+                    blog
+                  </Link>
                 </div>
                 <div className="mb-2.5 flex">
                   <FaChevronRight className="text-sm text-primary" />
-                  <p className="ml-2 text-sm text-body-color dark:text-body-color-dark">
-                    P.G Dip in Internet of Things (IOT)
-                  </p>
+                  <Link href="/" className="ml-2 text-[12px] font-medium uppercase text-body-color dark:text-body-color-dark">
+                   nasscom
+                  </Link>
                 </div>
-                <div className="mb-2.5 ml-4 flex">
-                  {" "}
-                  <p className="ml-2 text-sm text-body-color dark:text-body-color-dark">
-                    Data Science And Machine Learning Course
-                  </p>
+               
+                <div className="mb-2.5 flex">
+                  <FaChevronRight className="mt-1 text-sm text-primary" />
+                  <Link href="/" className="ml-2 text-[12px] font-medium uppercase text-body-color dark:text-body-color-dark">
+                   placements
+                  </Link>
                 </div>
                 <div className="mb-2.5 flex">
                   <FaChevronRight className="mt-1 text-sm text-primary" />
-                  <p className="ml-2 text-sm text-body-color dark:text-body-color-dark">
-                    Masters in Artificial Intelligence & Robotics
-                  </p>
-                </div>
-                <div className="mb-2.5 flex">
-                  <FaChevronRight className="mt-1 text-sm text-primary" />
-                  <p className="ml-2 text-sm text-body-color dark:text-body-color-dark">
-                    Masters in Embedded Systems Design
-                  </p>
+                  <Link href="/" className="ml-2 text-[12px] font-medium uppercase text-body-color dark:text-body-color-dark">
+                    terms conditions
+                  </Link>
                 </div>
               </div>
               <div className="">
@@ -133,7 +128,7 @@ const Footer = () => {
           <div className="h-px w-full bg-gradient-to-r from-transparent via-[#D2D8E183] to-transparent dark:via-[#959CB183]"></div>
           <div className="py-8">
           <p className='text-body-color dark:text-body-color-dark text-center my-2' >Disclaimer & Cookie Policy</p>
-        <p className='text-body-color dark:text-body-color-dark text-center'>Copyright @ 2021 All Rights Reserved. Design By Opstech Solution</p>
+          <p className='text-body-color dark:text-body-color-dark text-center'>Copyright @ 2024 All Rights Reserved.<Link href="https://www.stmdevelopments.com/" target="_blank" className="text-primary"> Design by STM Developments</Link></p>
           </div>
         </div>
         <div className="absolute right-0 top-14 z-[-1]">
