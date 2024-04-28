@@ -33,19 +33,19 @@ const menuData: Menu[] = [
       {
         id: 41,
         title: "Embedded systems",
-        path: "/about",
+        path: "/",
         newTab: false,
       },
       {
         id: 42,
         title: "AI& Machine Learning",
-        path: "/contact",
+        path: "/",
         newTab: false,
       },
       {
         id: 43,
         title: "Embedded software",
-        path: "/blog",
+        path: "/",
         newTab: false,
       },
     ],

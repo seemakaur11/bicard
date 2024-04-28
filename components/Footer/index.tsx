@@ -61,20 +61,20 @@ const Footer = () => {
                 </div>
                 <div className="mb-2.5 flex">
                   <FaChevronRight className="text-sm text-primary" />
-                  <Link href="/" className="ml-2 text-[12px] font-medium uppercase text-body-color dark:text-body-color-dark">
+                  <Link href="/nasscom" className="ml-2 text-[12px] font-medium uppercase text-body-color dark:text-body-color-dark">
                    nasscom
                   </Link>
                 </div>
                
                 <div className="mb-2.5 flex">
                   <FaChevronRight className="mt-1 text-sm text-primary" />
-                  <Link href="/" className="ml-2 text-[12px] font-medium uppercase text-body-color dark:text-body-color-dark">
+                  <Link href="/placements" className="ml-2 text-[12px] font-medium uppercase text-body-color dark:text-body-color-dark">
                    placements
                   </Link>
                 </div>
                 <div className="mb-2.5 flex">
                   <FaChevronRight className="mt-1 text-sm text-primary" />
-                  <Link href="/" className="ml-2 text-[12px] font-medium uppercase text-body-color dark:text-body-color-dark">
+                  <Link href="/terms-conditions" className="ml-2 text-[12px] font-medium uppercase text-body-color dark:text-body-color-dark">
                     terms conditions
                   </Link>
                 </div>
