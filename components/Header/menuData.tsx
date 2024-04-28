@@ -15,18 +15,6 @@ const menuData: Menu[] = [
   },
   {
     id: 3,
-    title: "Blog",
-    path: "/blog",
-    newTab: false,
-  },
-  {
-    id: 4,
-    title: "Service",
-    path: "/service",
-    newTab: false,
-  },
-  {
-    id: 5,
     title: "Training",
     newTab: false,
     submenu: [
@@ -52,9 +40,41 @@ const menuData: Menu[] = [
   },
   {
     id: 4,
-    title: "Contact",
+    title: "Nasscom",
+    path: "/",
+    newTab: false,
+  },
+  {
+    id: 5,
+    title: "Service",
+    path: "/service",
+    newTab: false,
+  },
+  {
+    id: 6,
+    title: "Placements",
+    path: "/",
+    newTab: false,
+  },
+  {
+    id: 7,
+    title: "Blog",
+    path: "/blog",
+    newTab: false,
+  },
+ 
+  {
+    id: 8,
+    title: "Contact Us",
     path: "/contact",
     newTab: false,
   },
+  {
+    id: 9,
+    title: "Terms Conditions",
+    path: "/",
+    newTab: false,
+  },
+  
 ];
 export default menuData;

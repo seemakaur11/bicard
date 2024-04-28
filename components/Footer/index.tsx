@@ -133,7 +133,7 @@ const Footer = () => {
           <div className="h-px w-full bg-gradient-to-r from-transparent via-[#D2D8E183] to-transparent dark:via-[#959CB183]"></div>
           <div className="py-8">
           <p className='text-body-color dark:text-body-color-dark text-center my-2' >Disclaimer & Cookie Policy</p>
-        <p className='text-body-color dark:text-body-color-dark text-center'>Copyright @ 2021 All Rights Reserved. Design By Opstech Solution</p>
+        <p className='text-body-color dark:text-body-color-dark text-center'>Copyright @ 2024 All Rights Reserved.<Link href="https://www.stmdevelopments.com/" className="text-primary"> Design by STM Developments</Link></p>
           </div>
         </div>
         <div className="absolute right-0 top-14 z-[-1]">
