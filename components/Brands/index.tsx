@@ -1,16 +1,45 @@
-import { Brand } from "@/types/brand";
+"use client";
 import Image from "next/image";
+import { useState, useEffect } from 'react';
 import brandsData from "./brandsData";
 import SectionTitle from "../Common/SectionTitle";
+import { Swiper, SwiperSlide } from "swiper/react";
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/effect-fade";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import { EffectFade, Autoplay } from "swiper/modules";
 
 const Brands = () => {
+  const [slidesPerView, setSlidesPerView] = useState(4);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 768) {
+        setSlidesPerView(1); // Show 1 item on smaller screens
+      } else if (window.innerWidth < 1024) {
+        setSlidesPerView(2); // Show 2 items on medium screens
+      } else if (window.innerWidth < 1280) {
+        setSlidesPerView(3); // Show 3 items on large screens
+      } else {
+        setSlidesPerView(4); // Show 4 items on extra-large screens
+      }
+    };
+    handleResize(); 
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   return (
     <section className="pt-16">
       <div className="container">
         <div className="-mx-4 flex flex-wrap">
           <div className="w-full px-4">
             <div
-              className="wow fadeInUp bg-gray-light dark:bg-gray-dark flex flex-wrap items-center justify-center rounded-sm px-8 py-8 sm:px-10 md:px-[50px] md:py-[40px] xl:p-[50px] 2xl:px-[70px] 2xl:py-[60px]"
+              className="wow fadeInUp flex flex-wrap items-center justify-center rounded-sm bg-gray-light px-8 py-8 dark:bg-gray-dark sm:px-10 md:px-[50px] md:py-[40px] xl:p-[50px] 2xl:px-[70px] 2xl:py-[60px]"
               data-wow-delay=".1s"
             >
               <SectionTitle
@@ -18,9 +47,30 @@ const Brands = () => {
                 paragraph="Bicard is a placement partner of more than 100+ most reputed IT industries globally. We are one of the most preferred choices of the top IT industries in India. Bicard feel extremely privileged to provide the much needed skilled IT workforce to the industry. Our placement partners are an integral part of our training system and it is their invaluable feedbacks on curriculum that helps us improve our course structure as per industry requirements."
                 mb="44px"
               />
-              {brandsData.map((brand) => (
-                <SingleBrand key={brand.id} brand={brand} />
-              ))}
+              <Swiper
+                spaceBetween={50}
+                slidesPerView={slidesPerView}
+                lazy={true}
+                className="mySwiper"
+                loop={true}
+                autoplay={{ delay: 2000 }}
+                modules={[EffectFade, Autoplay]}
+              >
+                {!!brandsData &&
+                  brandsData.map((slide, index) => {
+                    return (
+                      <SwiperSlide key={index}>
+                        <Image
+                          src={slide.image}
+                          className=" w-full  rounded-lg border border-dashed"
+                          width={130}
+                          height={100}
+                          alt="slide"
+                        />
+                      </SwiperSlide>
+                    );
+                  })}
+              </Swiper>
             </div>
           </div>
         </div>
@@ -30,20 +80,3 @@ const Brands = () => {
 };
 
 export default Brands;
-
-const SingleBrand = ({ brand }: { brand: Brand }) => {
-  const { href, image, name } = brand;
-
-  return (
-    <div className="mx-3 flex w-full max-w-[160px] items-center justify-center py-[15px] sm:mx-4 lg:max-w-[130px] xl:mx-6 xl:max-w-[150px] 2xl:mx-8 2xl:max-w-[160px]">
-      <a
-        href={href}
-        target="_blank"
-        rel="nofollow noreferrer"
-        className="relative h-10 w-full opacity-70 grayscale transition hover:opacity-100 hover:grayscale-0 dark:opacity-60 dark:hover:opacity-100"
-      >
-        <Image src={image} alt={name} fill />
-      </a>
-    </div>
-  );
-};

@@ -17,7 +17,7 @@ const featuresData: Feature[] = [
       "At Bicard Embedded System Institute, we provide various training options like P.G Diploma in Embedded Systems Design, Masters in Embedded Systems Design, Masters in Artificial Intelligence & Robotics, Data Science And Machine Learning Course, and P.G Diploma in Internet of Things (IOT).",
   },
   {
-    id: 1,
+    id: 2,
     icon: (
       <svg width="40" height="40" viewBox="0 0 40 40" className="fill-current">
         <path
@@ -33,7 +33,7 @@ const featuresData: Feature[] = [
     
   },
   {
-    id: 1,
+    id: 3,
     icon: (
       <svg width="40" height="40" viewBox="0 0 40 40" className="fill-current">
         <path

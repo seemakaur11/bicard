@@ -1,52 +1,123 @@
-import { Testimonial } from "@/types/testimonial";
+"use client";
+import { useState, useEffect } from 'react';
 import SectionTitle from "../Common/SectionTitle";
-import SingleTestimonial from "./SingleTestimonial";
+import Image from "next/image";
+import { Swiper, SwiperSlide } from "swiper/react";
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/effect-fade";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import { EffectFade, Autoplay } from "swiper/modules";
 
-const testimonialData: Testimonial[] = [
+const testimonialData = [
   {
     id: 1,
     name: "Sunil Kumar Singh",
     designation: "Domain Expert",
-    content:
-      "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
-    image: "/images/testimonials/auth-01.png",
-    star: 5,
+    image: "/images/testimonials/Sunil-Kumar-Singh.jpg",
   },
   {
     id: 2,
     name: "Sandeep Agashe ",
     designation: "Domain Expert",
-    content:
-      "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
-    image: "/images/testimonials/auth-02.png",
-    star: 5,
+    image: "/images/testimonials/Sandeep-Agashe.jpg",
   },
   {
     id: 3,
     name: "Ankit Joshi",
     designation: "Domain Expert",
-    content:
-      "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
-    image: "/images/testimonials/auth-03.png",
-    star: 5,
+    image: "/images/testimonials/Aniket-Joshi.jpg",
+  },
+  {
+    id: 4,
+    name: "Nisarg-Pandya",
+    designation: "Domain Expert",
+    image: "/images/testimonials/Nisarg-Pandya.png",
+  },
+  {
+    id: 5,
+    name: "Dipak-Naik",
+    designation: "Domain Expert",
+    image: "/images/testimonials/Dipak-Naik.jpg",
+  },
+  {
+    id: 6,
+    name: "Hemant-Choudhary",
+    designation: "Domain Expert",
+    image: "/images/testimonials/Hemant-Choudhary.jpg",
+  },
+  {
+    id: 7,
+    name: "J.V",
+    designation: "Domain Expert",
+    image: "/images/testimonials/J.png",
   },
 ];
 
 const Testimonials = () => {
+  const [slidesPerView, setSlidesPerView] = useState(4);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 768) {
+        setSlidesPerView(1); // Show 1 item on smaller screens
+      } else if (window.innerWidth < 1024) {
+        setSlidesPerView(2); // Show 2 items on medium screens
+      } else if (window.innerWidth < 1280) {
+        setSlidesPerView(3); // Show 3 items on large screens
+      } else {
+        setSlidesPerView(4); // Show 4 items on extra-large screens
+      }
+    };
+    handleResize(); 
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   return (
-    <section className="dark:bg-bg-color-dark bg-gray-light relative z-10 py-16 md:py-20 lg:py-28">
+    <section className="relative z-10 bg-gray-light py-16 dark:bg-bg-color-dark md:py-20 lg:py-28">
       <div className="container">
         <SectionTitle
           title="Meet The Best Teachers"
           paragraph="A team with a commitment to promote Excellence and Perfection in teaching and enhance the success of every Student at BICARD."
           center
         />
-
-        <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
-          {testimonialData.map((testimonial) => (
-            <SingleTestimonial key={testimonial.id} testimonial={testimonial} />
-          ))}
-        </div>
+        <Swiper
+          spaceBetween={50}
+          slidesPerView={slidesPerView}
+          lazy={true}
+          className="mySwiper"
+          loop={true}
+          autoplay={{ delay: 2000 }}
+          modules={[EffectFade, Autoplay]}
+        >
+          {!!testimonialData &&
+            testimonialData.map((slide, index) => {
+              return (
+                <SwiperSlide key={index}>
+                  <div
+                    className="wow fadeInUp rounded-sm p-5 bg-whiteshadow-two duration-300 hover:shadow-one dark:bg-dark dark:shadow-three dark:hover:shadow-gray-dark "
+                    data-wow-delay=".1s"
+                  >
+                    <Image
+                      src={slide.image}
+                      className=" w-full object-cover rounded-lg"
+                      width={1000}
+                      height={300}
+                      alt="slide"
+                    />
+                   <div className="text-center py-3">
+                   <p className="text-primary">{slide.name}</p>
+                    <p className="text-lg">{slide.designation}</p>
+                   </div>
+                  </div>
+                </SwiperSlide>
+              );
+            })}
+        </Swiper>
       </div>
       <div className="absolute right-0 top-5 z-[-1]">
         <svg

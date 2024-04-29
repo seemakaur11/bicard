@@ -31,3 +31,17 @@
     @apply opacity-100;
   }
 }
+
+.mySwiper .swiper-button-prev {
+  background-color: transparent;
+}
+.mySwiper .swiper-button-next {
+  background-color: transparent;
+}
+
+.mySwiper .swiper-pagination-bullet {
+  background-color: #4a6cf7;
+  border: 1px solid grey;
+  width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 16px));
+  height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 16px));
+} 
