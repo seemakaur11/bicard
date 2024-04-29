@@ -27,7 +27,7 @@ const BlogDetailsPage = () => {
                 
                 <div>
                   <p className="mb-10 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
-                  Yes, BICARD also offers training programs in the field of embedded systems. BICARD's embedded training programs aim to equip students with the skills and knowledge required to design and develop embedded systems for various applications such as consumer electronics, automotive systems, medical devices, industrial automation, and more.
+                  Yes, BICARD also offers training programs in the field of embedded systems. BICARD&apos;s embedded training programs aim to equip students with the skills and knowledge required to design and develop embedded systems for various applications such as consumer electronics, automotive systems, medical devices, industrial automation, and more.
                   </p>
                   <p className="text-base font-medium leading-relaxed text-body-color ">The embedded training program at BICARD covers various aspects of embedded systems, including microcontroller and microprocessor architecture, embedded programming, real-time operating systems (RTOS), device driver development, hardware interfacing, and more. The program also includes hands-on training and projects to help students gain practical experience in the design and development of embedded systems.</p>
                   <div className="mb-10 w-full overflow-hidden rounded">
@@ -41,9 +41,9 @@ const BlogDetailsPage = () => {
                     </div>
                   </div>
                   <p className="mb-8 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
-                  BICARD's embedded training programs are conducted by experienced faculty members and trainers who have expertise in the field of embedded systems design and development. The training programs are designed to provide a comprehensive understanding of embedded systems and prepare students for careers in the field of embedded systems design and development.
+                  BICARD&lsquo;s embedded training programs are conducted by experienced faculty members and trainers who have expertise in the field of embedded systems design and development. The training programs are designed to provide a comprehensive understanding of embedded systems and prepare students for careers in the field of embedded systems design and development.
                    
-                  It's recommended to visit BICARD's official website regularly or contact us directly to obtain more detailed information about their embedded training programs, including course content, fees, and other relevant details.
+                  It&lsquo;s recommended to visit BICARD&lsquo;s official website regularly or contact us directly to obtain more detailed information about their embedded training programs, including course content, fees, and other relevant details.
                   </p>
                  
                   <h3 className="font-xl mb-10 font-bold leading-tight text-black dark:text-white sm:text-2xl sm:leading-tight lg:text-xl lg:leading-tight xl:text-2xl xl:leading-tight">
@@ -78,7 +78,7 @@ const BlogDetailsPage = () => {
                   </ul>
                   <div className="relative z-10 mb-10 overflow-hidden rounded-md bg-primary bg-opacity-10 p-8 md:p-9 lg:p-8 xl:p-9">
                     <p className="text-center text-base font-medium italic text-body-color">
-                    BICARD's embedded course is taught by experienced faculty members and trainers who have expertise in the field of embedded systems design and development. The course is designed to provide a comprehensive understanding of embedded systems and prepare students for careers in the field of embedded systems design and development..
+                    BICARD&lsquo;s embedded course is taught by experienced faculty members and trainers who have expertise in the field of embedded systems design and development. The course is designed to provide a comprehensive understanding of embedded systems and prepare students for careers in the field of embedded systems design and development..
                     </p>
                     <span className="absolute left-0 top-0 z-[-1]">
                       <svg
