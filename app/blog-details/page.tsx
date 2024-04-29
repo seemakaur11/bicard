@@ -41,9 +41,9 @@ const BlogDetailsPage = () => {
                     </div>
                   </div>
                   <p className="mb-8 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
-                  BICARD&lsquo;s embedded training programs are conducted by experienced faculty members and trainers who have expertise in the field of embedded systems design and development. The training programs are designed to provide a comprehensive understanding of embedded systems and prepare students for careers in the field of embedded systems design and development.
+                  BICARD&apos;s embedded training programs are conducted by experienced faculty members and trainers who have expertise in the field of embedded systems design and development. The training programs are designed to provide a comprehensive understanding of embedded systems and prepare students for careers in the field of embedded systems design and development.
                    
-                  It&lsquo;s recommended to visit BICARD&lsquo;s official website regularly or contact us directly to obtain more detailed information about their embedded training programs, including course content, fees, and other relevant details.
+                  It&apos;s recommended to visit BICARD&apos;s official website regularly or contact us directly to obtain more detailed information about their embedded training programs, including course content, fees, and other relevant details.
                   </p>
                  
                   <h3 className="font-xl mb-10 font-bold leading-tight text-black dark:text-white sm:text-2xl sm:leading-tight lg:text-xl lg:leading-tight xl:text-2xl xl:leading-tight">
@@ -78,7 +78,7 @@ const BlogDetailsPage = () => {
                   </ul>
                   <div className="relative z-10 mb-10 overflow-hidden rounded-md bg-primary bg-opacity-10 p-8 md:p-9 lg:p-8 xl:p-9">
                     <p className="text-center text-base font-medium italic text-body-color">
-                    BICARD&lsquo;s embedded course is taught by experienced faculty members and trainers who have expertise in the field of embedded systems design and development. The course is designed to provide a comprehensive understanding of embedded systems and prepare students for careers in the field of embedded systems design and development..
+                    BICARD&apos;s embedded course is taught by experienced faculty members and trainers who have expertise in the field of embedded systems design and development. The course is designed to provide a comprehensive understanding of embedded systems and prepare students for careers in the field of embedded systems design and development..
                     </p>
                     <span className="absolute left-0 top-0 z-[-1]">
                       <svg
