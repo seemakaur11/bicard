@@ -10,7 +10,7 @@ import Hero from "@/components/Hero";
 import Testimonials from "@/components/Testimonials";
 import Video from "@/components/Video";
 import { Metadata } from "next";
-import Head from "next/head";
+// import Head from "next/head";
 
 export const metadata: Metadata = {
   title:
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
-      <Head>
+      {/* <Head>
         <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -42,7 +42,7 @@ export default function Home() {
           embedded training pune bicard,
           embedded system course bicard"
         />
-      </Head>
+      </Head> */}
       <ScrollUp />
       <Hero />
       <Features />

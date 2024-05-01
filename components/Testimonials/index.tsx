@@ -88,7 +88,6 @@ const Testimonials = () => {
         <Swiper
           spaceBetween={50}
           slidesPerView={slidesPerView}
-{/*           lazy={true} */}
           className="mySwiper"
           loop={true}
           autoplay={{ delay: 2000 }}

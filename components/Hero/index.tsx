@@ -20,7 +20,6 @@ const Hero = () => {
     <>
       <Swiper
       spaceBetween={50}
-      lazy={true}
       style={{
         "--swiper-navigation-color": "#4a6cf7",
         "--swiper-navigation-size": "22px",
