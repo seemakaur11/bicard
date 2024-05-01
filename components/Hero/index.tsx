@@ -20,11 +20,6 @@ const Hero = () => {
     <>
       <Swiper
       spaceBetween={50}
-      style={{
-        "--swiper-navigation-color": "#4a6cf7",
-        "--swiper-navigation-size": "22px",
-        "--swiper-pagination-color": "#fff",
-      }}
       navigation={true}
       pagination={{
         clickable: true,
