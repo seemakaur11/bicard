@@ -1,4 +1,3 @@
-import { Brand } from "@/types/brand";
 
 const brandsData= [
   {
